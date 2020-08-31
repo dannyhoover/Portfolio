@@ -1,3 +1,84 @@
-#header {
-    font-size: xx-large;
+
+/* portfolio */
+
+.mr-3 {
+    width: 145px;
+    height: 95px;
 }
+
+.container .row .col-md-6 {
+    clear: both;
+}
+
+.container .row {
+    padding: 10px;
+}
+
+/* index */
+
+
+a:link {
+color: green;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:visited {
+color: lightcyan;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:hover {
+color: lightgreen;
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:active {
+color: lightgoldenrodyellow;
+background-color: transparent;
+text-decoration: underline;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    padding-top: 18px;
+    clear: both;
+    float: left;
+}
+
+
+.col-md-3 {
+    align-items: center;
+}
+
+
+.col-md-7 {
+    float: right;
+    clear: both;
+    background-color: #0066cc;
+    color: whitesmoke;
+}
+
+
+
+/* contact */
+
+.contact-header {
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    text-align: center;
+    color: whitesmoke;
+    background-color: #808080;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
