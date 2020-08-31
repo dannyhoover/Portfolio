@@ -1,6 +1,10 @@
 
 /* portfolio */
 
+.jumbotron.jumbotron-fluid {
+    background-color: #698db1;
+}
+
 .mr-3 {
     width: 145px;
     height: 95px;
@@ -12,6 +16,17 @@
 
 .container .row {
     padding: 10px;
+}
+
+.item-header {
+    font-size: 12pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-emphasis: bold;
+}
+
+.item-text {
+    text-emphasis: none;
+    font-size: 10pt;
 }
 
 /* index */
