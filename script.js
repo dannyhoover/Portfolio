@@ -8,16 +8,36 @@ const contactLink = $("nav-link-contact");
 
 displayAboutPage();
 
+// links in header
 aboutLink.on("click", function (event) {
     event.preventDefault();
 
-    aboutPage.addClass("hide");
-    portfolioPage.addClass("hide");
-    contactPage.addClass("hide");
+    $("#about-page").empty();
+    $("#portfolio-page").empty();
+    $("#contact-me").empty();
 
     displayAboutPage();
 });
+portfolioLink.on("click", function (event) {
+    event.preventDefault();
 
+    $("#about-page").empty();
+    $("#portfolio-page").empty();
+    $("#contact-me").empty();
+
+    displayPortfolioPage();
+});
+contactLink.on("click", function (event) {
+    event.preventDefault();
+
+    $("#about-page").empty();
+    $("#portfolio-page").empty();
+    $("#contact-me").empty();
+
+    displayContactPage();
+});
+
+// page functions
 function displayAboutPage() {
     const aboutMeRow1 = $("<div>").addClass("row").appendTo(aboutPage);
     const aboutMeCol = $("<div>").addClass("col-md-3").appendTo(aboutMeRow1);
@@ -39,5 +59,11 @@ function displayAboutPage() {
 }
 
 function displayPortfolioPage() {
+
     const portfolioOptions = $("<div>").addClass("portfolioItem").appendTo(portfolioPage);
+
+}
+
+function displayContactPage() {
+
 }
