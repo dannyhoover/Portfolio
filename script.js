@@ -1,7 +1,7 @@
 // pointers to html elements
 const aboutPage = $("#about-page");
 const portfolioPage = $("#portfolio-page");
-const contactPage = $("#contact-me");
+const contactPage = $("#contact-page");
 
 // pointers to my nav bar links
 const aboutLink = $("#nav-link-about");
@@ -14,33 +14,27 @@ displayAboutPage();
 // about me page button
 aboutLink.on("click", function (event) {
     event.preventDefault();
-
     $("#about-page").empty();
     $("#portfolio-page").empty();
     $("#contact-me").empty();
-
     displayAboutPage();
 });
 
 // portfolio page button
 portfolioLink.on("click", function (event) {
     event.preventDefault();
-
     $("#about-page").empty();
     $("#portfolio-page").empty();
     $("#contact-me").empty();
-
     displayPortfolioPage();
 });
 
 // contact page button
 contactLink.on("click", function (event) {
     event.preventDefault();
-
     $("#about-page").empty();
     $("#portfolio-page").empty();
     $("#contact-me").empty();
-
     displayContactPage();
 });
 
@@ -143,8 +137,22 @@ function displayPortfolioPage() {
     // const portfolioItemText6 = $("<h5>").addClass("item-text").text("This was a homework assignment where I called on the OpenWeather API to display current weather data and display a five day forecast of a city of the user's choice.").appendTo(portfolioItemBody6);
 }
 
+// contact page function
 function displayContactPage() {
+    // header update
     document.getElementById("nav-item-about").className = "nav-item";
     document.getElementById("nav-item-portfolio").className = "nav-item";
     document.getElementById("nav-item-contact").className = "nav-item active";
+
+    // contact fields
+    const contactPageRow1 = $("<div>").addClass("row").appendTo(contactPage);
+    const nameDiv = $("<div>").addClass("col-md-6").text("Your name: ").appendTo(contactPageRow1);
+    const nameText = $("<textarea>").addClass("name-text").appendTo(nameDiv);
+    const emailDiv = $("<div>").addClass("col-md-6").text("Your Email: ").appendTo(contactPageRow1);
+    const emailText = $("<textarea>").addClass("email-text").appendTo(emailDiv);
+    const contactPageRow2 = $("<div>").addClass("row").appendTo(contactPage);
+    const messageDiv = $("<div>").addClass("col-md-12").text("Your Message: ").appendTo(contactPageRow2);
+    const messageText = $("<textarea>").addClass("message-text").appendTo(messageDiv);
+
+    // submit button
 }

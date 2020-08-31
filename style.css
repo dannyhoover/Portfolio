@@ -82,7 +82,6 @@ p {
 }
 
 
-
 /* contact */
 
 .contact-header {
@@ -90,6 +89,22 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.name-text {
+    width: 45%;
+}
+
+.email-text {
+    width: 45%;
+    clear: both;
+}
+
+.message-text {
+    width: 100%;
+    height: 150px;
+}
+
+
+/* footer */
 footer {
     text-align: center;
     color: whitesmoke;
