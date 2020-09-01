@@ -87,16 +87,16 @@ function displayPortfolioPage() {
     // item 1
     const portfolioCol1 = $("<div>").addClass("col-md-6").appendTo(portfolioRow1);
     const portfolioItem1 = $("<div>").addClass("media").appendTo(portfolioCol1);
-    const portfolioLink1 = $("<a>").attr("href", "https://jackryansmith.github.io/Group-work/").attr("src", "./assets/group-project-img.jpg").attr("target", "_blank").appendTo(portfolioItem1);
-    const portfolioPic1 = $("<img>").addClass("mr-3 border").attr("alt", "My Sports Page").appendTo(portfolioLink1);
+    const portfolioLink1 = $("<a>").attr("href", "https://jackryansmith.github.io/Group-work/").attr("target", "_blank").appendTo(portfolioItem1);
+    const portfolioPic1 = $("<img>").addClass("mr-3 border").attr("src", "./assets/group-project-img.jpg").attr("alt", "My Sports Page").appendTo(portfolioLink1);
     const portfolioItemBody1 = $("<div>My Sports Page</div>").addClass("item-header").appendTo(portfolioItem1);
     const portfolioItemText1 = $("<h5>").addClass("item-text").text("My first group project. My team came up with the idea for a sports info web app that called on iSports API to return local sports data.").appendTo(portfolioItemBody1);
 
     // item 2
     const portfolioCol2 = $("<div>").addClass("col-md-6").appendTo(portfolioRow1);
     const portfolioItem2 = $("<div>").addClass("media").appendTo(portfolioCol2);
-    const portfolioLink2 = $("<a>").attr("href", "https://dannyhoover.github.io/Weather-Dashboard/").attr("src", "...").attr("target", "_blank").appendTo(portfolioItem2);
-    const portfolioPic2 = $("<img>").addClass("mr-3 border").attr("alt", "Weather App").appendTo(portfolioLink2);
+    const portfolioLink2 = $("<a>").attr("href", "https://dannyhoover.github.io/Weather-Dashboard/").attr("target", "_blank").appendTo(portfolioItem2);
+    const portfolioPic2 = $("<img>").addClass("mr-3 border").attr("src", "./assets/weather.img3.jpg").attr("alt", "Weather App").appendTo(portfolioLink2);
     const portfolioItemBody2 = $("<div>Weather App</div>").addClass("item-header").appendTo(portfolioItem2);
     const portfolioItemText2 = $("<h5>").addClass("item-text").text("This was a homework assignment where I called on the OpenWeather API to display current weather data and display a five day forecast of a city of the user's choice.").appendTo(portfolioItemBody2);
 
@@ -106,16 +106,16 @@ function displayPortfolioPage() {
     // item 3
     const portfolioCol3 = $("<div>").addClass("col-md-6").appendTo(portfolioRow2);
     const portfolioItem3 = $("<div>").addClass("media").appendTo(portfolioCol3);
-    const portfolioLink3 = $("<a>").attr("href", "https://dannyhoover.github.io/Calendar/02-Homework/Develop/").attr("src", "...").attr("target", "_blank").appendTo(portfolioItem3);
-    const portfolioPic3 = $("<img>").addClass("mr-3 border").attr("alt", "Calendar App").appendTo(portfolioLink3);
+    const portfolioLink3 = $("<a>").attr("href", "https://dannyhoover.github.io/Calendar/02-Homework/Develop/").attr("target", "_blank").appendTo(portfolioItem3);
+    const portfolioPic3 = $("<img>").addClass("mr-3 border").attr("src", "./assets/calendar.img2.jpg").attr("alt", "Calendar App").appendTo(portfolioLink3);
     const portfolioItemBody3 = $("<div>Calendar App</div>").addClass("item-header").appendTo(portfolioItem3);
     const portfolioItemText3 = $("<h5>").addClass("item-text").text("A calendar app lets the user put in data for each hour of the day and save the whole schedule.").appendTo(portfolioItemBody3);
 
     // item 4
     const portfolioCol4 = $("<div>").addClass("col-md-6").appendTo(portfolioRow2);
     const portfolioItem4 = $("<div>").addClass("media").appendTo(portfolioCol4);
-    const portfolioLink4 = $("<a>").attr("href", "https://dannyhoover.github.io/Homework3/").attr("src", "...").attr("target", "_blank").appendTo(portfolioItem4);
-    const portfolioPic4 = $("<img>").addClass("mr-3 border").attr("alt", "Password Generator").appendTo(portfolioLink4);
+    const portfolioLink4 = $("<a>").attr("href", "https://dannyhoover.github.io/Homework3/").attr("target", "_blank").appendTo(portfolioItem4);
+    const portfolioPic4 = $("<img>").addClass("mr-3 border").attr("src", "./assets/passwordpic.jpg").attr("alt", "Password Generator").appendTo(portfolioLink4);
     const portfolioItemBody4 = $("<div>Password Generator</div>").addClass("item-header").appendTo(portfolioItem4);
     const portfolioItemText4 = $("<h5>").addClass("item-text").text("Generate a random password! Pick your characters, case, and length.").appendTo(portfolioItemBody4);
 
@@ -135,6 +135,7 @@ function displayPortfolioPage() {
     // const portfolioPic6 = $("<img>").addClass("mr-3 border").attr("alt", "Weather App").appendTo(portfolioLink6);
     // const portfolioItemBody6 = $("<div>Weather App</div>").addClass("item-header").appendTo(portfolioItem6);
     // const portfolioItemText6 = $("<h5>").addClass("item-text").text("This was a homework assignment where I called on the OpenWeather API to display current weather data and display a five day forecast of a city of the user's choice.").appendTo(portfolioItemBody6);
+
 }
 
 // contact page function
