@@ -16,7 +16,7 @@ aboutLink.on("click", function (event) {
     event.preventDefault();
     $("#about-page").empty();
     $("#portfolio-page").empty();
-    $("#contact-me").empty();
+    $("#contact-page").empty();
     displayAboutPage();
 });
 
@@ -25,7 +25,7 @@ portfolioLink.on("click", function (event) {
     event.preventDefault();
     $("#about-page").empty();
     $("#portfolio-page").empty();
-    $("#contact-me").empty();
+    $("#contact-page").empty();
     displayPortfolioPage();
 });
 
@@ -34,7 +34,7 @@ contactLink.on("click", function (event) {
     event.preventDefault();
     $("#about-page").empty();
     $("#portfolio-page").empty();
-    $("#contact-me").empty();
+    $("#contact-page").empty();
     displayContactPage();
 });
 
@@ -90,7 +90,7 @@ function displayPortfolioPage() {
     const portfolioLink1 = $("<a>").attr("href", "https://jackryansmith.github.io/Group-work/").attr("src", "./assets/group-project-img.jpg").attr("target", "_blank").appendTo(portfolioItem1);
     const portfolioPic1 = $("<img>").addClass("mr-3 border").attr("alt", "My Sports Page").appendTo(portfolioLink1);
     const portfolioItemBody1 = $("<div>My Sports Page</div>").addClass("item-header").appendTo(portfolioItem1);
-    const portfolioItemText1 = $("<h5>").addClass("item-text").text("This was my first group project. My team came up with the idea for a sports info web app that called on iSports API to return local sports data.").appendTo(portfolioItemBody1);
+    const portfolioItemText1 = $("<h5>").addClass("item-text").text("My first group project. My team came up with the idea for a sports info web app that called on iSports API to return local sports data.").appendTo(portfolioItemBody1);
 
     // item 2
     const portfolioCol2 = $("<div>").addClass("col-md-6").appendTo(portfolioRow1);
@@ -109,7 +109,7 @@ function displayPortfolioPage() {
     const portfolioLink3 = $("<a>").attr("href", "https://dannyhoover.github.io/Calendar/02-Homework/Develop/").attr("src", "...").attr("target", "_blank").appendTo(portfolioItem3);
     const portfolioPic3 = $("<img>").addClass("mr-3 border").attr("alt", "Calendar App").appendTo(portfolioLink3);
     const portfolioItemBody3 = $("<div>Calendar App</div>").addClass("item-header").appendTo(portfolioItem3);
-    const portfolioItemText3 = $("<h5>").addClass("item-text").text("This calendar app lets the user put in data for each hour of the day and save the whole schedule.").appendTo(portfolioItemBody3);
+    const portfolioItemText3 = $("<h5>").addClass("item-text").text("A calendar app lets the user put in data for each hour of the day and save the whole schedule.").appendTo(portfolioItemBody3);
 
     // item 4
     const portfolioCol4 = $("<div>").addClass("col-md-6").appendTo(portfolioRow2);
@@ -143,6 +143,9 @@ function displayContactPage() {
     document.getElementById("nav-item-about").className = "nav-item";
     document.getElementById("nav-item-portfolio").className = "nav-item";
     document.getElementById("nav-item-contact").className = "nav-item active";
+    const contactHeaderRow = $("<div>").addClass("row").appendTo(contactPage);
+    const contactMeHeaderCol = $("<div>").addClass("col-md-3").appendTo(contactHeaderRow);
+    const contactMeHeaderText = $("<h1>").text("Contact Me: ").appendTo(contactMeHeaderCol);
 
     // contact fields
     const contactPageRow1 = $("<div>").addClass("row").appendTo(contactPage);
@@ -155,4 +158,7 @@ function displayContactPage() {
     const messageText = $("<textarea>").addClass("message-text").appendTo(messageDiv);
 
     // submit button
+    const submitBtnRow = $("<div>").addClass("row").appendTo(contactPage);
+    const submitBtnCol = $("<div>").addClass("col-md-2").appendTo(submitBtnRow)
+    const submitBtn = $("<button>").addClass("btn btn-secondary").text("Send").appendTo(submitBtnCol);
 }
