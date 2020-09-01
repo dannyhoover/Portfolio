@@ -1,6 +1,24 @@
 # Portfolio
 
-This is my updated Portfolio.
+This is my updated Portfolio. It showcases four projects that I've worked on: My group project, a weather app, a calendar app, and a password generator.
+
+We start at the intro page that shows some info about me, like my linkedin and github profile links.
+
+![About me page](./assets/first-page.jpg)
+
+The user can navigate to the portfolio page that has links to all of my above projects.
+
+![Portfolio page](./assets/second-page.jpg)
+
+The final page is the contact page where the user can input their name, email, and a message to get a hold of me.
+
+![Contact page](./assets/third-page.jpg)
+
+As an added bonus, clicking on my name in the top left corner shows my current resume.
+
+![Resume page](./assets/resume-page.jpg)
+
+Assignment details below:
 
 ## Unit 08 Project 1 Homework: Professional Materials
 
