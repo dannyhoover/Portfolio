@@ -98,7 +98,7 @@ function displayPortfolioPage() {
     const portfolioLink2 = $("<a>").attr("href", "https://dannyhoover.github.io/Weather-Dashboard/").attr("target", "_blank").appendTo(portfolioItem2);
     const portfolioPic2 = $("<img>").addClass("mr-3 border").attr("src", "./assets/weather.img3.jpg").attr("alt", "Weather App").appendTo(portfolioLink2);
     const portfolioItemBody2 = $("<div>Weather App</div>").addClass("item-header").appendTo(portfolioItem2);
-    const portfolioItemText2 = $("<h5>").addClass("item-text").text("This was a homework assignment where I called on the OpenWeather API to display current weather data and display a five day forecast of a city of the user's choice.").appendTo(portfolioItemBody2);
+    const portfolioItemText2 = $("<h5>").addClass("item-text").text("This was a homework assignment where I called on the OpenWeather API to display current weather data and display a five day forecast of a city that the user chooses.").appendTo(portfolioItemBody2);
 
     // row 2 containing next two items
     const portfolioRow2 = $("<div>").addClass("row").appendTo(portfolioContainer);
@@ -109,7 +109,7 @@ function displayPortfolioPage() {
     const portfolioLink3 = $("<a>").attr("href", "https://dannyhoover.github.io/Calendar/02-Homework/Develop/").attr("target", "_blank").appendTo(portfolioItem3);
     const portfolioPic3 = $("<img>").addClass("mr-3 border").attr("src", "./assets/calendar.img2.jpg").attr("alt", "Calendar App").appendTo(portfolioLink3);
     const portfolioItemBody3 = $("<div>Calendar App</div>").addClass("item-header").appendTo(portfolioItem3);
-    const portfolioItemText3 = $("<h5>").addClass("item-text").text("A calendar app lets the user put in data for each hour of the day and save the whole schedule.").appendTo(portfolioItemBody3);
+    const portfolioItemText3 = $("<h5>").addClass("item-text").text("A calendar app lets the user put in data for each hour of a normal work day and save the whole schedule.").appendTo(portfolioItemBody3);
 
     // item 4
     const portfolioCol4 = $("<div>").addClass("col-md-6").appendTo(portfolioRow2);
