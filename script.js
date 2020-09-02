@@ -162,4 +162,13 @@ function displayContactPage() {
     const submitBtnRow = $("<div>").addClass("row").appendTo(contactPage);
     const submitBtnCol = $("<div>").addClass("col-md-2").appendTo(submitBtnRow)
     const submitBtn = $("<button>").addClass("btn btn-secondary").text("Send").appendTo(submitBtnCol);
+
+    submitBtn.on("click", function (event) {
+        event.preventDefault();
+        alert("Sent! Thanks for your message!");
+        $("#about-page").empty();
+        $("#portfolio-page").empty();
+        $("#contact-page").empty();
+        displayContactPage();
+    });    
 }
